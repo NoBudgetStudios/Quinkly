@@ -1,0 +1,12 @@
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+openai==1.30.1
+pydantic==2.7.1
+python-multipart==0.0.9
+
+# Optional for frontend
+streamlit==1.35.0
+requests==2.31.0
+
+# Optional if you later want CORS support
+aiofiles==23.2.1

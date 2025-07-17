@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM Content Generator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Content Generator</h1>
+    <form id="gen-form" class="form">
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <input type="text" name="topic" id="topic" required value="Healthy Lifestyle Tips" />
+      </div>
+      <div class="form-group">
+        <label for="tone">Tone</label>
+        <input type="text" name="tone" id="tone" required value="Friendly" />
+      </div>
+      <div class="form-group">
+        <label for="style">Style</label>
+        <input type="text" name="style" id="style" required value="Blog Post" />
+      </div>
+      <div class="form-group">
+        <label for="keywords">Keywords (comma-separated)</label>
+        <input type="text" name="keywords" id="keywords" required value="wellness, fitness, nutrition" />
+      </div>
+      <div class="form-group">
+        <label for="output_type">Output Type</label>
+        <input type="text" name="output_type" id="output_type" required value="Instagram Caption" />
+      </div>
+      <button type="submit">Generate</button>
+    </form>    
+
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
